@@ -56,10 +56,14 @@ public class LightBulbs {
 
         }
 
-        //Display the result here
+        //Display the result here -- unable to display the results
+        //The declaration for loop is wrong to begin with
         System.out.println("Results below: ");
-        for(Map.Entry entry : iterationPattern.entrySet()){
-            System.out.println(entry.getKey() + " : " + entry.getValue());
+        for(Map.Entry<Integer, Boolean> entry : iterationPattern.entrySet()){
+            System.out.println("Test A");
+            int key = entry.getKey();
+            boolean value = entry.getValue();
+            System.out.println("key " + key + " : " + "value" + value);
         }
     }
 
